@@ -7,6 +7,8 @@ MrAIC.pl 1.4.5 by Johan A. A. Nylander
 
 E-mail: jnylander @ users.sourceforge.net
 
+See also: https://github.com/nylander/pMrAIC
+
 Description
 -----------
 
