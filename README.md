@@ -8,6 +8,7 @@ MrAIC.pl 1.4.5 by Johan A. A. Nylander
 E-mail: jnylander @ users.sourceforge.net
 
 Description
+-----------
 
 MrAIC.pl is a Perl script for calculating AIC, AICc, BIC, and Akaike weights 
 (for a review, see Burnham and Anderson, 2002) for nucleotide substitution 
@@ -28,6 +29,7 @@ find the maximum of the likelihood function under all models. This is necessary
 for finding AIC, AICc, or BIC for the models.
 
 Requirements
+------------
 
 1) Perl (see also ActivePerl) must be installed on your system.
 
@@ -41,6 +43,7 @@ to phyml.exe and put it in the same folder as the mraic.pl script.
 
 
 Usage
+-----
 
 Interactively or by passing arguments as below
 
@@ -58,6 +61,7 @@ Example, "sequential" format (note the space between taxon name and sequence):
 
 
 Notes
+-----
 
 In this script, sample size (n) used in AICc and BIC is assumed to be the 
 number of characters in the data matrix. This is probably not correct when it 
@@ -76,28 +80,35 @@ assessment of the ML for some data sets!
 
 
 Acknowledgements
+----------------
 
 Thanks to Torsten Eriksson for advice on slick Perl programming.
 
 
 Suggested reference for MrAIC.pl
+--------------------------------
 
 Nylander, J. A. A. 2004. MrAIC.pl. Program distributed by the author. 
 Evolutionary Biology Centre, Uppsala University.
 
 
 Other References
+----------------
 
 Burnham, K. P., and D. R. Anderson. 2002. Model selection and multimodel 
 inference, a practical information-theoretic approach. Second edition. 
 Springer, New York.
+
 Guindon, S., and O. Gascuel. 2003. A simple, fast, and accurate algorithm to 
 estimate phyogenies by maximum likelihood. Systematic Biology, 52:696-704:
+
 Nylander, J. A. A. 2004. Bayesian phylogenetics and the evolution of Gall 
 wasps. Comprehensive Summaries of Uppsala Dissertations fro the Faculty of 
 Science and Technology 937. Uppsala University.
+
 Posada, D., and K. A. Crandall. 1998. MODELTEST: Testing the model of DNA 
 substitution. Bioinformatics 14:817-818.
+
 Ronquist, F., and J. P. Huelsenbeck. 2003. MRBAYES 3: Bayesian phylogenetic 
 inference under mixed models. Bioinformatics 19:1572-1574.
 
