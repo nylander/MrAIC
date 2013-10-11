@@ -3,7 +3,7 @@
 # This is
  $program_name =    "mraic.pl";
  $version =         "1.4.5";
- $lastChanges =	    "11/26/2009 11:40:12 AM CETT"; # JN
+ $lastChanges =	    "10/11/2013 09:48:15 AM"; # JN
 # made by
  $author =          "Johan Nylander";
 #
@@ -376,8 +376,6 @@ sub run {
 
         # Get the lnL in the *stat(s).txt file(s)
         if (($statFileName) = glob($phyml_stat_txt_file)) {
-            warn "\n $statFileName (hit return to continue)\n" and getc();
-
             # check indirectly if PHYML is installed
         }
         elsif(($statFileName) = glob($phyml_stat_txt_file2)) { # hack for macosx version of phyml
