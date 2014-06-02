@@ -1,9 +1,9 @@
 MrAIC
 =====
 
-README file for MrAIC.pl 1.4.5 -- 2009-Nov-26
+README file for MrAIC.pl 1.4.6 -- 2014-June-02
 
-MrAIC.pl 1.4.5 by Johan A. A. Nylander
+MrAIC.pl 1.4.6 by Johan A. A. Nylander
 
 E-mail: jnylander @ users.sourceforge.net
 

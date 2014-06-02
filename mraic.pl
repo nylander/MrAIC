@@ -2,8 +2,8 @@
 #-------------------------------------------------------------------------#
 # This is
  $program_name =    "mraic.pl";
- $version =         "1.4.5";
- $lastChanges =	    "10/11/2013 09:48:15 AM"; # JN
+ $version =         "1.4.6";
+ $lastChanges =	    "06/02/2014 09:37:05 AM"; # JN
 # made by
  $author =          "Johan Nylander";
 #
@@ -17,9 +17,9 @@
 # Usage:            Interactivly or by passing a filename: 'mraic.pl filename'
 #                   Input data is DNA characters in PHYML format.
 #
-# Requirements:     PHYML v. 3.0. (http://www.atgc-montpellier.fr/phyml/) needs
+# Requirements:     PHYML v. 3.1. (http://www.atgc-montpellier.fr/phyml/) needs
 #                   to be installed!
- $PHYML = "phyml301";	#  Optionally, specify the full PATH to phyml here
+ $PHYML = "phyml";	#  Optionally, specify the full PATH to phyml here
 #
 # Version history:  Version 1.0 Oct 2004.
 #                   Version 1.1 Nov 2004: Branch lengths are now
@@ -63,6 +63,10 @@
 #                   Version 1.4.5 Nov 2009. The output from PHYML (>v.3.)
 #                   for MacOSX has a different output than on the other OSs.
 #                   Slight adjustments accordingly. Thanks to Andreas Wallberg.
+#                   Version 1.4.6 June 2014. The output from PHYML (v.3.1)
+#                   has now changed for MacOSX (again). Slight adjustments
+#                   accordingly. Thanks to Stina Weststrand.
+#                   
 #                   
 #--------------------------------------------------------------------------#
 
@@ -391,8 +395,8 @@ sub run {
             $tmpLnL = 999.999;
             while (<STATFILE>) {
                 chomp;
-                #$tmpLnL = $1 if ($_ =~ m/Log-likelihood:\s+(.+)/i); # O.B-E.
-                $tmpLnL = $1 if ($_ =~ m/likelihood\s*:[^\-]+(\-.+)/i); # A.W.
+                $tmpLnL = $1 if ($_ =~ m/Log-likelihood:\s+(.+)/i); # O.B-E.
+                #$tmpLnL = $1 if ($_ =~ m/likelihood\s*:[^\-]+(\-.+)/i); # A.W.
             }
         close(STATFILE);
         if ($tmpLnL == 999.999) {
