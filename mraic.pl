@@ -395,8 +395,9 @@ sub run {
             $tmpLnL = 999.999;
             while (<STATFILE>) {
                 chomp;
-                $tmpLnL = $1 if ($_ =~ m/Log-likelihood:\s+(.+)/i); # O.B-E.
+                #$tmpLnL = $1 if ($_ =~ m/Log-likelihood:\s+(.+)/i); # O.B-E.
                 #$tmpLnL = $1 if ($_ =~ m/likelihood\s*:[^\-]+(\-.+)/i); # A.W.
+                $tmpLnL = $1 if ($_ =~ m/Log-likelihood\s*:\s*(\-\d+\.\d+)/i); # JN
             }
         close(STATFILE);
         if ($tmpLnL == 999.999) {
