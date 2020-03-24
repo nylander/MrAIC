@@ -33,7 +33,7 @@ for finding AIC, AICc, or BIC for the models.
 Requirements
 ------------
 
-1) Perl (see also ActivePerl) must be installed on your system.
+1) Perl must be installed on your system.
 
 2) PHYML (Guindon and Gascuel, 2003) version 3 must be installed on your system 
 (named "phyml" and be in the PATH). Alternatively, user might edit MrAIC.pl to 
